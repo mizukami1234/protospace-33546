@@ -41,7 +41,7 @@ class PrototypesController < ApplicationController
     redirect_to prototype_path(prototype.id)
 
     else
-      render :edit
+      redirect_to action: :edit
     end
   end
 
